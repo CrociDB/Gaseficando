@@ -28,7 +28,7 @@ public class CPF extends JFrame implements ActionListener
 	
 	private void CreateGUI()
 	{
-		lblTexto = new JLabel("Digite os primeiros 9 dígidos do CPF");
+		lblTexto = new JLabel("Digite os primeiros 9 dï¿½gidos do CPF");
 		lblTexto.setBounds(10, 10, 250, 20);
 		getContentPane().add(lblTexto);
 		
@@ -52,14 +52,13 @@ public class CPF extends JFrame implements ActionListener
 		{
 			if (txtFirst.getText().length() != 9)
 			{
-				JOptionPane.showMessageDialog(null, "Por favor, coloque os primeiros 9 dígitos do CPF (sem pontos).");
+				JOptionPane.showMessageDialog(null, "Por favor, coloque os primeiros 9 dï¿½gitos do CPF (sem pontos).");
 			}
 			else
 			{
 				txtLast.setText("" + Gerar(txtFirst.getText()));
 				//JOptionPane.showMessageDialog(null, "Resultado: " + Validar(txtFirst.getText() + txtLast.getText()));
 			}
-			//Validar("32109745860");
 		}
 	}
 	
